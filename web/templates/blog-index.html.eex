@@ -1,0 +1,233 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1>Standard Blog</h1>
+				</header>
+
+				<div id="blog" class="row">
+
+					<!-- LEFT COLUMN -->
+					<div class="col-md-9">
+
+						<!-- blog item -->
+						<div class="item">
+
+							<!-- article title -->
+							<div class="item-title">
+								<h2><a href="blog-single-with-sidebar.html">This is an Image Post</a></h2>
+								<a href="blog-with-sidebar.html" class="label label-default light"><i class="fa fa-dot-circle-o"></i> Business</a> 
+								<a href="blog-single-with-sidebar.html#comments" class="scrollTo label label-default light"><i class="fa fa-comment-o"></i> 3 Comments</a>
+								<span class="label label-default light">June 29, 2014</span> 
+							</div>
+
+							<!-- image -->
+							<figure>
+								<img src="assets/images/demo/conference.jpg" class="img-responsive" alt="img" />
+							</figure>
+
+							<!-- blog short preview -->
+							<p>
+								Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi, quis convallis enim dolor sed elit. Pellentesque ultricies congue lacus, eget elementum erat lobortis et. Sed non velit neque.
+							</p>
+
+							<!-- read more button -->
+							<a href="blog-single-with-sidebar.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+
+						</div>
+						<!-- /blog item -->
+
+
+						<!-- blog item -->
+						<div class="item">
+
+							<!-- article title -->
+							<div class="item-title">
+								<h2><a href="blog-single-with-sidebar.html">This is a Video Post</a></h2>
+								<a href="blog-with-sidebar.html" class="label label-default light"><i class="fa fa-dot-circle-o"></i> Business</a> 
+								<a href="blog-single-with-sidebar.html#comments" class="scrollTo label label-default light"><i class="fa fa-comment-o"></i> 3 Comments</a>
+								<span class="label label-default light">June 29, 2014</span> 
+							</div>
+
+							<!-- vido -->
+							<iframe class="fitvids" src="https://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
+
+							<!-- blog short preview -->
+							<p>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+							</p>
+
+							<!-- read more button -->
+							<a href="blog-single-with-sidebar.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+
+						</div>
+						<!-- /blog item -->
+
+
+						<!-- blog item -->
+						<div class="item">
+
+							<!-- article title -->
+							<div class="item-title">
+								<h2><a href="blog-single-with-sidebar.html">Blog Post With Text Only</a></h2>
+								<a href="blog-with-sidebar.html" class="label label-default light"><i class="fa fa-dot-circle-o"></i> Business</a> 
+								<a href="blog-single-with-sidebar.html#comments" class="scrollTo label label-default light"><i class="fa fa-comment-o"></i> 3 Comments</a>
+								<span class="label label-default light">June 29, 2014</span> 
+							</div>
+
+							<!-- blog short preview -->
+							<p>
+								Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi, quis convallis enim dolor sed elit. Pellentesque ultricies congue lacus, eget elementum erat lobortis et. Sed non velit neque.
+							</p>
+
+							<!-- read more button -->
+							<a href="blog-single-with-sidebar.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+
+						</div>
+						<!-- /blog item -->
+
+
+						<!-- blog item -->
+						<div class="item">
+
+							<!-- article title -->
+							<div class="item-title">
+								<h2><a href="blog-single-with-sidebar.html">This is an Audio Post</a></h2>
+								<a href="blog-with-sidebar.html" class="label label-default light"><i class="fa fa-dot-circle-o"></i> Business</a> 
+								<a href="blog-single-with-sidebar.html#comments" class="scrollTo label label-default light"><i class="fa fa-comment-o"></i> 3 Comments</a>
+								<span class="label label-default light">June 29, 2014</span> 
+							</div>
+
+							<!-- audio -->
+							<iframe class="fullwidth" height="166" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/62974792&amp;color=ff6600&amp;auto_play=false&amp;show_artwork=true"></iframe>
+
+							<!-- blog short preview -->
+							<p>
+								Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+							</p>
+
+							<!-- read more button -->
+							<a href="blog-single-with-sidebar.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+
+						</div>
+						<!-- /blog item -->
+
+
+						<!-- PAGINATION -->
+						<div class="text-center">
+							<ul class="pagination">
+								<li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+							</ul>
+						</div>
+						<!-- /PAGINATION -->
+
+					</div>
+					<!-- /LEFT COLUMN -->
+
+
+					<!-- RIGHT COLUMN -->
+					<div class="col-md-3">
+
+
+						<!-- blog search -->
+						<div class="widget">
+
+							<h3>SEARCH</h3>
+
+							<form method="get" action="#" class="input-group">
+								<input type="text" class="form-control" name="s" id="s" value="" placeholder="Blog Search" />
+								<span class="input-group-btn">
+									<button class="btn btn-primary"><i class="fa fa-search"></i></button>
+								</span>
+							</form>
+						</div>
+
+
+
+						<!-- RECENT,POPULAR -->
+						<div class="widget">
+
+							<!-- TABS -->
+							<div class="tabs nomargin-top">
+
+								<!-- tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#tab1" data-toggle="tab">
+											Popular
+										</a>
+									</li>
+									<li>
+										<a href="#tab2" data-toggle="tab">
+											Recent
+										</a>
+									</li>
+								</ul>
+
+								<!-- tabs content -->
+								<div class="tab-content">
+									<div id="tab1" class="tab-pane active">
+										<iframe class="fitvids" src="https://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
+										<ul>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Gallery Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> Blog Post With Text Only</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is an Audio Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Video Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> An awsome post</a> <small>23 June 2013 / 12:43</small></li>
+										</ul>
+									</div>
+
+									<div id="tab2" class="tab-pane"><!-- tab content -->
+										<ul>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Gallery Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> Blog Post With Text Only</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is an Audio Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Video Post</a> <small>23 June 2013 / 12:43</small></li>
+											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> An awsome post</a> <small>23 June 2013 / 12:43</small></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<!-- /TABS -->
+
+						</div>
+						<!-- /RECENT,POPULAR -->
+
+
+						<!-- categories -->
+						<div class="widget">
+
+							<h4>CATEGORIES</h4>
+
+							<ul class="nav nav-list">
+								<li><a href="#"><i class="fa fa-angle-right"></i> Development</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i> Marketing</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i> Photography</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i> Shopping</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i> Lifestyle</a></li>
+							</ul>
+
+						</div>
+
+					</div>
+					<!-- /RIGHT COLUMN -->
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+<%= render "footer.html" %>

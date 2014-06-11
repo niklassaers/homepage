@@ -1,0 +1,21 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1>Search Results</h1>
+				</header>
+
+				<p>
+					Sorry, no results found!
+				</p>
+
+			</div>
+		</div>
+
+
+
+<%= render "footer.html" %>

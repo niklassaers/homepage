@@ -1,0 +1,141 @@
+<%= render "header.html" %>
+
+		<!-- SLIDER -->
+		<img id="cycle-loader" src="static/images/spinner.gif" alt="loader" />
+
+		<ul id="slider">
+			<li>
+				<img src="static/images/demo/slider/_MG06432.jpg" alt="" />
+
+				<div class="header">
+					<div id="title">
+						Niklas Saers
+					</div>
+					<div id="subtitle">
+						Cand. Scient in IT & Candidate in Early Music
+					</div>
+				</div>
+					
+					
+				<div class="contact">
+					Gl Vardevej 190<br/>
+					6715 Esbjerg<br/>
+					+45 207 27 700<br/>
+					<a href="mailto:niklas@saers.com">niklas@saers.com</a>
+				</div>
+				
+				<div class="content">
+					
+					<div class="section-header">
+						Profile
+					</div>
+					
+					<div class="section-content">
+						Experienced 35 year old medialogist: iOS developer and musician
+					</div>
+					
+					<div class="section-header">
+						Experience
+					</div>
+					
+					<div class="subsection-header">
+						Team Lead, Trifork A/S - Esbjerg 2011-
+					</div>
+					<div class="subsection-content">
+						iPhone and iPad application developer, responsible for the market of West- and South Jutland. Involved in key projects both in mobility for business-to-business, retail, healthcare and energy visualization.
+					</div>
+					
+					<div class="subsection-header">
+						Senior Consultant, Dansk Scanning A/S - Esbjerg 2008-2011
+					</div>
+					<div class="subsection-content">
+						Project manager and developer of several key projects on both production, distribution and customer service systems. Part of the Norwegian sales team. Main platofrms Java & .NET
+					</div>
+					
+					<div class="subsection-header">
+						iOS application developer - Esbjerg 2008-2011
+					</div>
+					<div class="subsection-content">
+						Developer of mobile tools for musicians for the iPhone and iPad, ranging from tuners, sound analyser and synthesizer controllers. Application development consulting.
+					</div>
+					
+					<div class="subsection-header">
+						Business Intelligence Consultant, Thorvalddata - Esbjerg 2007-2008
+					</div>
+					<div class="subsection-content">
+						Lead SharePoint developer and developer of BI solutions using the Microsoft BI 2008 stack. Lead mobile platform developer with focus on the iPhone, supporting also Windows Mobile
+					</div>
+					
+					<div class="subsection-header">
+						Independent business intelligence consultant, Esbjerg - 2007
+					</div>
+					<div class="subsection-content">
+						Data collection and normalization, data warehouse design and BI analysis using JBoss/MySQL
+					</div>
+					
+					<div class="subsection-header">
+						Amanuensis, Aalborg University, Esbjerg - 2005-2007
+					</div>
+					<div class="subsection-content">
+						Master student supervision, and teaching courses in C programming, systems design, multimedia related courses and acoustic analysis. Research in sound analysis/re-synthesis and music information retrieval.
+					</div>
+					
+					<div class="subsection-header">
+						Daily manager, Registrar.no, Oslo - 2003-2005
+					</div>
+					<div class="subsection-content">
+						System development, maintenance and customer support at this ISP. Manage a transition from a static, non-scalable setting to a dynamic, scalable system with more customer services.
+					</div>
+					
+					<div class="subsection-header">
+						Developer, ThinkSec A/S, Oslo - 2002
+					</div>
+					<div class="subsection-content">
+						Development of a framework for registration applications
+					</div>
+					
+					
+					<div class="section-header">
+						Education
+					</div>
+					
+					<div class="subsection-header">
+						Department of Informatics, University of Oslo
+					</div>
+					<div class="subsection-content">
+						Cand. Scient. Design of Information Systems - Aug 1998 - May 2003
+					</div>
+					
+					<div class="subsection-header">
+						Vestjysk Musikkonservatorium, Esbjerg
+					</div>
+					<div class="subsection-content">
+						Candidate in Early Music, Recorder - Sept 2003 - June 2008
+					</div>
+					
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/_MG_6107.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Hearder of cats</h2>
+					</div>
+
+					<div class="block">
+						<p>Scrum master, team lead, provider of bad jokes</p>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+
+		<!-- /SLIDER -->
+
+
+<%= render "footer.html" %>

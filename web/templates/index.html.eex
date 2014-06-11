@@ -1,0 +1,125 @@
+<%= render "header.html" %>
+
+
+
+
+		<!-- SLIDER -->
+		<img id="cycle-loader" src="static/images/spinner.gif" alt="loader" />
+
+		<!-- controlls -->
+		<div class="maximage-controls">
+			<a href="#" id="slider_prev"></a>
+			<a href="#" id="slider_next"></a>
+		</div>
+		<!-- /controlls -->
+
+		<ul id="slider">
+			<li>
+				<img src="static/images/demo/slider/_MG06432.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>iOS developer</h2>
+					</div>
+
+					<div class="block">
+						<p>iOS developer since 2008, active in the Cocoa community, builder of powerful apps, mentor of devs</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/_MG_6107.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Hearder of cats</h2>
+					</div>
+
+					<div class="block">
+						<p>Scrum master, team lead, provider of bad jokes</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/_MG_1514.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Fabians dad</h2>
+					</div>
+
+					<div class="block">
+						<p>Backer of adventures, provider of entertainment</p>
+					</div>
+
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/DSC00461.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Christina's husband</h2>
+					</div>
+
+					<div class="block">
+						<p>Husband, boyfriend, dance partner</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/IMG_5991.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Recorder player</h2>
+					</div>
+
+					<div class="block">
+						<p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="static/images/demo/slider/13944516753_9a18ba6ede_o.jpg" alt="" />
+				<div class="caption">
+
+					<div class="block">
+						<h1>Niklas Saers</h1>
+					</div>
+
+					<div class="block">
+						<h2>Coffee enthusiast</h2>
+					</div>
+
+					<div class="block">
+						<p>Roaster of beans, Pavoni-squeeser</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<!-- /SLIDER -->
+
+
+<%= render "footer.html" %>

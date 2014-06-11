@@ -1,0 +1,9 @@
+/_build
+/deps
+/tmp
+erl_crash.dump
+/Documentation
+/HTML
+mix.lock
+/priv
+/blog/content

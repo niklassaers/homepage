@@ -1,0 +1,191 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1>Meet the <strong>Team</strong></h1>
+				</header>
+
+				<article>
+					<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon. Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+				<article>
+
+				<div class="row team text-center">
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/2.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>CEO</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/3.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Developer</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/4.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Design</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/5.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Programmer</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/8.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Marketing</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/7.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>QA</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/6.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Director</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						<div class="thumbnail text-center">
+							<div class="item-image">
+								<img class="img-responsive" src="assets/images/demo/people/fixed-height/1.jpg" alt="" />
+								<h3>
+									<span>Jessica Doe</span> <br />
+									<small>Supplier</small>
+								</h3>
+							</div>
+							<div class="caption text-left">
+								<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
+								<a href="#" class="social rounded fa fa-facebook"></a>
+								<a href="#" class="social rounded fa fa-twitter"></a>
+								<a href="#" class="social rounded fa fa-google-plus"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- CALLOUT -->
+				<div class="alert alert-default fade in">
+
+					<div class="row">
+
+						<div class="col-md-9 col-sm-8"><!-- left text -->
+							<h4 class="nomargin">Be part of <strong>Alkaline Team</strong></h4>
+							<p class="nomargin">
+								Alkaline is looking for tealented people! Join us now!
+							</p>
+						</div><!-- /left text -->
+
+						
+						<div class="col-md-3 col-sm-4 text-right"><!-- right btn -->
+							<a href="contact-1.html" class="btn btn-primary btn-lg">OK, LET'S DO IT</a>
+						</div><!-- /right btn -->
+
+					</div>
+
+				</div>
+				<!-- /CALLOUT -->
+
+			</div>
+		</div>
+
+
+
+<%= render "footer.html" %>

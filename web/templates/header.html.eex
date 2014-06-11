@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Niklas Saers</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Niklas Saers" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+		<!-- WEB FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="static/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+		<link href="static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+		<link href="static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="static/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/color_scheme/green.css" rel="stylesheet" type="text/css" />
+
+		<!-- Morenizr -->
+		<script type="text/javascript" src="static/plugins/modernizr.min.js"></script>
+	</head>
+	<body>
+
+
+		<!-- HEADER -->
+		<header id="header">
+			<div class="container">
+
+				<!-- LOGO -->
+				<a href="/" class="logo"><img alt="" src="static/images/logo.png" height="60" /></a>
+				<!-- LOGO -->
+
+				<!-- OPTIONS -->
+				<ul id="topOptions">
+					<li>
+						<button class="topSearchBtn fa fa-search"></button>
+						<!-- search form -->
+						<form id="topSearch" method="get" action="page-search.html" class="input-group pull-right">
+							<input type="text" class="form-control" name="k" id="k" value="" placeholder="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-primary notransition"><i class="fa fa-check"></i></button>
+							</span>
+						</form>
+						<!-- /search form -->
+					</li>
+					<li>
+					<li><!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+					</li>
+				</ul>
+				<!-- /OPTIONS -->
+
+
+				<!-- TOP MENU -->
+				<div class="navbar-collapse nav-main-collapse collapse pull-left">
+					<nav class="nav-main">
+						<ul class="nav nav-pills nav-main scroll-menu" id="topMain">
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="/CV.html">CURRICULUM VITA <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="/CV.html">Plain</a></li>
+									<li><a href="/static/assets/cv.pdf">PDF version</a></li>
+									<li><a href="/cv-portfolio.html">Portfolio</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#">BLOG <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="page-about-us.html">My blog</a></li>
+									<li class="dropdown">
+										<a href="#">Recent entries <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Most popular <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Categories <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#">APPLICATIONS <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="shortcodes-toggles.html">Well Tempered</a></li>
+									<li><a href="feature-typography.html">pOSCa</a></li>
+								</ul>
+							</li>
+
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#">CREATIVE <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu pull-right">
+									<li class="dropdown">
+										<a href="#">Music <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Recorder player</a></li>
+											<li><a href="#">Composer</a></li>
+											<li><a href="#">Tracker</a></li>
+											<li><a href="#">Acoustics research</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Photography <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Photo gallery</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Writing <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Thesis</a></li>
+											<li><a href="#">Academic work</a></li>
+											<li><a href="#">Articles</a></li>
+											<li><a href="#">Fiction &amp; Prose</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Projects <i class="fa fa-angle-right"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">The Recorder Players Page</a></li>
+											<li><a href="#">Esbjerg Tidlig Ensemble</a></li>
+											<li><a href="#">Technical reviews</a></li>
+											<li><a href="#">Public speaking</a></li>
+											<li><a href="#">Menu Level #3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#">CONTACT <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu pull-right">
+									<li><a href="/contact.html">Get in touch</a></li>
+									<li><a target="_blank" href="https://www.facebook.com/niklassaers">Facebook</a></li>
+									<li><a target="_blank" href="http://twitter.com/niklassaers">Twitter</a></li>
+									<li><a target="_blank" href="https://github.com/niklassaers">Github</a></li>
+									<li><a target="_blank" href="https://www.linkedin.com/profile/view?id=5807569">LinkedIn</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /TOP MENU -->
+
+			</div>
+		</header>
+		<!-- /HEADER -->
+

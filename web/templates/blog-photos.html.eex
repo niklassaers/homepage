@@ -1,0 +1,139 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1><strong>Portfolio</strong> Single Slider</h1>
+				</header>
+
+
+				<!-- PORTFOLIO -->
+				<section id="portfolio">
+
+					<div class="owl-carousel controlls-over product-image" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+						<div>
+							<img alt="" class="img-responsive" src="assets/images/demo/portfolio/8.jpg">
+						</div>
+						<div>
+							<img alt="" class="img-responsive" src="assets/images/demo/portfolio/4.jpg">
+						</div>
+					</div>
+
+
+					<small class="font300 fsize13 block project_quick_info">
+						<i class="fa fa-calendar styleSecondColor"></i> 29 June 2014
+						<span>&bull;</span>
+						Client: Alkaline LLC
+					</small>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.
+					</p>
+
+
+					<div class="text-center">
+						<a href="http://www.stepofweb.com/" target="_blank" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-external-link"></i> Live Preview</a>
+					</div>
+
+					<hr />
+
+					<!-- RELATED -->
+					<h2><strong>Related</strong> Projects</h2>
+					<div class="row">
+
+						<div class="col-md-3"><!-- item -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="portfolio-single-slider.html">
+										<span class="overlay"></span>
+										<span class="inner">
+											<strong>PROJECT</strong> DETAIL
+										</span>
+									</a>
+									<img class="img-responsive" src="assets/images/demo/portfolio/thumb/1.jpg" width="260" height="260" alt="">
+								</figure>
+								<div class="item-box-desc">
+									<h4>Alkaline Project</h4>
+									<small class="styleColor">29 June, 2014</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3"><!-- item -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover lightbox" href="http://www.youtube.com/watch?v=W7Las-MJnJo" data-plugin-options='{"type":"iframe"}'>
+										<span class="overlay"></span>
+										<span class="inner">
+											<strong>VIEW</strong> VIDEO
+										</span>
+									</a>
+									<img class="img-responsive" src="assets/images/demo/portfolio/thumb/2.jpg" width="260" height="260" alt="">
+								</figure>
+								<div class="item-box-desc">
+									<h4>Video Project</h4>
+									<small class="styleColor">29 June, 2014</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3"><!-- item -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="portfolio-single-slider.html">
+										<span class="overlay"></span>
+										<span class="inner">
+											<strong>PROJECT</strong> DETAIL
+										</span>
+									</a>
+									<img class="img-responsive" src="assets/images/demo/portfolio/thumb/3.jpg" width="260" height="260" alt="">
+								</figure>
+								<div class="item-box-desc">
+									<h4>Alkaline Project</h4>
+									<small class="styleColor">29 June, 2014</small>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3"><!-- item -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="portfolio-single-slider.html">
+										<span class="overlay"></span>
+										<span class="inner">
+											<strong>PROJECT</strong> DETAIL
+										</span>
+									</a>
+									<img class="img-responsive" src="assets/images/demo/portfolio/thumb/4.jpg" width="260" height="260" alt="">
+								</figure>
+								<div class="item-box-desc">
+									<h4>Alkaline Project</h4>
+									<small class="styleColor">29 June, 2014</small>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- /RELATED -->
+
+
+
+					<!-- CALLOUT -->
+					<div class="bs-callout text-center nomargin-bottom">
+						<h3>Do you like what you see? <a href="contact-us.html" target="_blank" class="btn btn-primary btn-lg">Yes, let's work together!</a></h3>
+					</div>
+					<!-- /CALLOUT -->
+
+				</section>
+				<!-- /PORTFOLIO -->
+
+
+
+			</div>
+		</div>
+
+
+<%= render "footer.html" %>

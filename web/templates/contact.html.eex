@@ -1,0 +1,97 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1><strong>Contact</strong> Me</h1>
+				</header>
+
+				<div class="row">
+
+					<!-- FORM -->
+					<div class="col-md-8">
+
+						<form action="#" method="post">
+
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Subject</label>
+										<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-6">
+										<label>Full Name *</label>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
+									</div>
+									<div class="col-md-6">
+										<label>E-mail Address *</label>
+										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Message *</label>
+										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<input type="submit" value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
+								</div>
+							</div>
+
+						</form>
+					
+					</div>
+					<!-- /FORM -->
+
+
+					<!-- INFO -->
+					<div class="col-md-4">
+
+						<p>
+							If you'd like to get in touch, you can use this form. It will send me an email with your request. I do get a lot of email, though, so please excuse me if it takes a little while to get back to you.
+						</p>
+
+						<div class="divider half-margins"><!-- divider 30px --></div>
+
+						<p>
+							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
+							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> 1800-555-1234</span>
+							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
+						</p>
+
+						<div class="divider half-margins"><!-- divider 30px --></div>
+
+						<h4 class="font300">Business Hours</h4>
+						<p>
+							<span class="block"><strong>Monday - Friday:</strong> 10am to 6pm</span>
+							<span class="block"><strong>Saturday:</strong> 10am to 2pm</span>
+							<span class="block"><strong>Sunday:</strong> Closed</span>
+						</p>
+
+					</div>
+					<!-- /INFO -->
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+<%= render "footer.html" %>

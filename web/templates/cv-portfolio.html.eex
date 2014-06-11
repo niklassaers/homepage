@@ -1,0 +1,164 @@
+<%= render "header.html" %>
+
+
+
+		<div id="middle" class="container">
+			<div class="white">
+
+				<header class="page-header">
+					<h1><strong>Portfolio</strong> 3 Columns</h1>
+				</header>
+
+
+				<!-- PORTFOLIO -->
+				<section id="portfolio">
+
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.</p>
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<ul class="nav nav-pills isotope-filter isotope-filter noborder pull-right" data-sort-id="isotope-list" data-option-key="filter">
+								<li data-option-value="*" class="active"><a href="#">Show All</a></li>
+								<li data-option-value=".development"><a href="#">Development</a></li>
+								<li data-option-value=".photography"><a href="#">Photography</a></li>
+								<li data-option-value=".design"><a href="#">Design</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+
+					<div class="row">
+
+						<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+							<li class="isotope-item col-sm-4 col-md-4 development"><!-- item -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover" href="portfolio-single-slider.html">
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>PROJECT</strong> DETAIL
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/1.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Alkaline Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 2 -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover lightbox" href="http://www.youtube.com/watch?v=W7Las-MJnJo" data-plugin-options='{"type":"iframe"}'>
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>VIEW</strong> VIDEO
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/2.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Video Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="isotope-item col-sm-4 col-md-4 design"><!-- item 3 -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover" href="portfolio-single-slider.html">
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>PROJECT</strong> DETAIL
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/3.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Alkaline Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 4 -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover" href="portfolio-single-slider.html">
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>PROJECT</strong> DETAIL
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/4.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Alkaline Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="isotope-item col-sm-4 col-md-4 development"><!-- item 5 -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover lightbox" href="http://www.youtube.com/watch?v=W7Las-MJnJo" data-plugin-options='{"type":"iframe"}'>
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>VIEW</strong> VIDEO
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/5.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Video Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="isotope-item col-sm-4 col-md-4 design"><!-- item 6 -->
+								<div class="item-box">
+									<figure>
+										<a class="item-hover" href="portfolio-single-slider.html">
+											<span class="overlay"></span>
+											<span class="inner">
+												<strong>PROJECT</strong> DETAIL
+											</span>
+										</a>
+										<img class="img-responsive" src="assets/images/demo/portfolio/thumb/6.jpg" width="260" height="260" alt="">
+									</figure>
+									<div class="item-box-desc">
+										<h4>Alkaline Project</h4>
+										<small class="styleColor">29 June, 2014</small>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+
+					</div><!-- /.masonry-container -->
+
+					<!-- CALLOUT -->
+					<div class="bs-callout text-center nomargin-bottom">
+						<h3>Do you like what you see? <a href="contact-1.html" target="_blank" class="btn btn-primary btn-lg">Yes, let's work together!</a></h3>
+					</div>
+					<!-- /CALLOUT -->
+
+
+				</section>
+				<!-- /PORTFOLIO -->
+
+
+
+			</div>
+		</div>
+
+
+<%= render "footer.html" %>
