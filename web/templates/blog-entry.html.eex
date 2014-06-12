@@ -1,11 +1,21 @@
 <%= render "header.html" %>
 
-
 		<div id="middle" class="container">
 			<div class="white">
 
 				<header class="page-header">
-					<h1>Blog article title here</h1>
+					<h1><%= @post.title %></h1>
+					<div class="text-center">
+						<ul class="pagination">
+							<%= if @last_url != nil do %>
+							<li><a href="<%= @last_url %>"><i class="fa fa-chevron-left"></i></a></li>
+							<% end %>
+							<%= if @next_url != nil do %>
+							<li><a href="<%= @next_url %>"><i class="fa fa-chevron-right"></i></a></li>
+							<% end %>
+						</ul>
+					</div>
+					
 				</header>
 
 				<div id="blog" class="row">
@@ -35,268 +45,32 @@
 
 						<!-- article content -->
 						<article>
-							<p class="dropcap">Aliquam fringilla, sapien eget scelerisque placerat, lorem libero cursus lorem, sed sodales lorem libero eu sapien. Nunc mattis feugiat justo vel faucibus. Nulla consequat feugiat malesuada. Ut justo nulla, <strong>facilisis vel molestie id</strong>, dictum ut arcu. Nunc ipsum nulla, eleifend non blandit quis, luctus quis orci. Cras blandit turpis mattis nulla ultrices interdum. Mauris pretium pretium dictum. Nunc commodo, felis sed dictum bibendum, risus justo iaculis dui, nec euismod orci sem eget neque. Donec in metus metus, vitae eleifend lorem. Ut vestibulum gravida venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit tincidunt magna non mollis. Fusce tempus tincidunt nisi, in luctus elit pellentesque quis. Sed velit mi, ullamcorper ut tempor ut, mattis eu lacus. Morbi rhoncus aliquet tellus, id accumsan enim sollicitudin vitae.</p>
-							<p>Vivamus <a href="#">magna justo</a>, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt.</p>
-							
-							<!-- BLOCKQUOTE -->
-							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-								<cite>Source Title</cite>
-							</blockquote>
-
-							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-							<p>Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p class="dropcap">
+								<%= @post.content %>
+							</p>
 						</article>
 
 
-						<!-- SOCIAL -->
-						<p class="socials">
-							<a href="#" class="rounded-icon social fa fa-facebook"><!-- facebook --></a>
-							<a href="#" class="rounded-icon social fa fa-twitter"><!-- twitter --></a>
-							<a href="#" class="rounded-icon social fa fa-google-plus"><!-- google plus --></a>
-							<a href="#" class="rounded-icon social fa fa-pinterest"><!-- pinterest --></a>
-							<a href="#" class="rounded-icon social fa fa-linkedin"><!-- linkedin --></a>
-						</p>
-
 						<!-- TAGS -->
 						<p class="fsize16"> Tags:
-							<a class="label label-default light" href="#"><i class="fa fa-tags"></i> Business</a> 
-							<a class="label label-default light" href="#"><i class="fa fa-tags"></i> Design</a> 
-							<a class="label label-default light" href="#"><i class="fa fa-tags"></i> Technology</a> 
+							<%= for tag <- @post.tags do %>
+								<a class="label label-default light" href="/blog/tags/<%= tag %>"><i class="fa fa-tags"></i> <%= tag %></a> 
+							<% end %>
+						</p>
+
+						<!-- CATEGORIES -->
+						<p class="fsize16"> Categories:
+							<%= for category <- @post.categories do %>
+								<a class="label label-default light" href="/blog/categories/<%= category %>"><i class="fa fa-tags"></i> <%= category %></a> 
+							<% end %>
 						</p>
 
 						
-						<div class="divider half-margins"><!-- divider 30px --></div>
-
-						<!-- COMMENTS -->
-						<div id="comments">
-							<h3>3 Comments</h3>
-
-							<!-- comment item -->
-							<div class="comment">
-
-								<!-- user-avatar -->
-								<span class="user-avatar">
-									<img class="pull-left media-object" src="assets/images/avatar.png" width="64" height="64" alt="">
-								</span>
-
-								<div class="media-body">
-									<a href="#commentForm" class="scrollTo replyBtn">reply</a>
-									<h4 class="media-heading bold">John Doe</h4>
-									<small class="block">June 29, 2014 - 11:23</small>
-									Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								</div>
-							</div>
-
-							<!-- comment item -->
-							<div class="comment">
-
-								<!-- user-avatar -->
-								<span class="user-avatar">
-									<img class="pull-left media-object" src="assets/images/avatar.png" width="64" height="64" alt="">
-								</span>
-
-								<div class="media-body">
-									<a href="#commentForm" class="scrollTo replyBtn">reply</a>
-									<h4 class="media-heading bold">Diana Doe</h4>
-									<small class="block">June 29, 2014 - 11:23</small>
-									Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								</div>
-							</div>
-
-							<!-- comment item -->
-							<div class="comment">
-
-								<!-- user-avatar -->
-								<span class="user-avatar">
-									<img class="media-object" src="assets/images/avatar.png" width="64" height="64" alt="">
-								</span>
-
-								<div class="media-body">
-									<a href="#commentForm" class="scrollTo replyBtn">reply</a>
-									<h4 class="media-heading bold">Melissa Doe</h4>
-									<small class="block">June 29, 2014 - 11:23</small>
-									Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-									<!-- comment reply -->
-									<div class="media">
-
-										<!-- user-avatar -->
-										<span class="user-avatar">
-											<img class="media-object" src="assets/images/avatar.png" width="64" height="64" alt="">
-										</span>
-
-										<div class="media-body">
-											<h4 class="media-heading bold">Peter Doe</h4>
-											<small class="block">June 29, 2014 - 11:23</small>
-											Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-							<hr />
-
-							<h4>
-								<strong>Leave a reply</strong>
-								<small class="block fsize13 font300">Your email address will not be published.</small>
-							</h4>
-
-							<!-- COMMENT FORM -->
-							<form id="commentForm" class="form-horizontal" method="post" action="#">
-								<div class="row">
-
-									<!-- name -->
-									<div class="col-md-4">
-										<label>Name *</label>
-										<input required class="form-control input-lg" type="text" name="author" id="author" value="" />
-									</div>
-
-									<!-- email -->
-									<div class="col-md-4">
-										<label>Email *</label>
-										<input required class="form-control input-lg" type="text" name="email" id="email" value="" />
-									</div>
-
-									<!-- website -->
-									<div class="col-md-4">
-										<label>Website</label>
-										<input class="form-control input-lg" type="text" name="url" id="url" value="" />
-									</div>
-
-								</div>
-
-								<div class="row">
-
-									<!-- comment -->
-									<div class="col-md-12">
-										<textarea required class="form-control input-lg" id="comment" name="comment" rows="5" placeholder="Your Comment *"></textarea>
-									</div><br />
-
-									<!-- code info -->
-									<div class="col-md-12 font300 fsize14">
-										<p>Allowed HTML tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </p>
-										<p>Inappropriate and irrelevant comments will be removed at an admin's discretion.<br /> Your email is used for verification purposes only, it will never be shared.</p>
-									</div>
-								
-									<!-- btn -->
-									<div class="col-md-12">
-										<p>
-											<button class="btn btn-primary">Post Comment</button>
-										</p>
-									</div>
-
-									<!-- subscribe -->
-									<div class="col-md-12 fsize16">
-										<p>
-											<input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" />  
-											<label for="subscribe_comments">Notify me of follow-up comments by email.</label>
-											<br />
-											<input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" /> 
-											<label for="subscribe_blog">Notify me of new posts by email.</label>
-										</p>
-									</div>
-
-								</div>
-
-							</form>
-							<!-- /COMMENT FORM -->
-
-						</div><!-- /COMMENTS -->
-
-
 					</div>
 					<!-- /LEFT COLUMN -->
 
 
-					<!-- RIGHT COLUMN -->
-					<div class="col-md-3">
-
-
-						<!-- blog search -->
-						<div class="widget">
-
-							<h3>SEARCH</h3>
-
-							<form method="get" action="#" class="input-group">
-								<input type="text" class="form-control" name="s" id="s" value="" placeholder="Blog Search" />
-								<span class="input-group-btn">
-									<button class="btn btn-primary"><i class="fa fa-search"></i></button>
-								</span>
-							</form>
-						</div>
-
-
-
-						<!-- RECENT,POPULAR -->
-						<div class="widget">
-
-							<!-- TABS -->
-							<div class="tabs nomargin-top">
-
-								<!-- tabs -->
-								<ul class="nav nav-tabs">
-									<li class="active">
-										<a href="#tab1" data-toggle="tab">
-											Popular
-										</a>
-									</li>
-									<li>
-										<a href="#tab2" data-toggle="tab">
-											Recent
-										</a>
-									</li>
-								</ul>
-
-								<!-- tabs content -->
-								<div class="tab-content">
-									<div id="tab1" class="tab-pane active">
-										<iframe class="fitvids" src="https://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
-										<ul>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Gallery Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> Blog Post With Text Only</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is an Audio Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Video Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> An awsome post</a> <small>23 June 2013 / 12:43</small></li>
-										</ul>
-									</div>
-
-									<div id="tab2" class="tab-pane"><!-- tab content -->
-										<ul>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Gallery Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> Blog Post With Text Only</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is an Audio Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> This is a Video Post</a> <small>23 June 2013 / 12:43</small></li>
-											<li><a href="blog-single-with-sidebar.html"><i class="fa fa-sign-out"></i> An awsome post</a> <small>23 June 2013 / 12:43</small></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-							<!-- /TABS -->
-
-						</div>
-						<!-- /RECENT,POPULAR -->
-
-
-						<!-- categories -->
-						<div class="widget">
-
-							<h4>CATEGORIES</h4>
-
-							<ul class="nav nav-list">
-								<li><a href="blog-with-sidebar.html"><i class="fa fa-angle-right"></i> Development</a></li>
-								<li><a href="blog-with-sidebar.html"><i class="fa fa-angle-right"></i> Marketing</a></li>
-								<li><a href="blog-with-sidebar.html"><i class="fa fa-angle-right"></i> Photography</a></li>
-								<li><a href="blog-with-sidebar.html"><i class="fa fa-angle-right"></i> Shopping</a></li>
-								<li><a href="blog-with-sidebar.html"><i class="fa fa-angle-right"></i> Lifestyle</a></li>
-							</ul>
-
-						</div>
-
-					</div>
-					<!-- /RIGHT COLUMN -->
+<%= render "blog-sidebar.html" %>
 
 				</div>
 

@@ -18,6 +18,10 @@ defmodule Homepage.Mixfile do
 
   defp deps do
     [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo" } ]
+      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo" },
+      { :timex, "~> 0.6.0"}
+      #{ :eml, github: "zambal/eml"}
+
+       ]
   end
 end

@@ -16,20 +16,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
-		<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css" />
-		<link href="static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-		<link href="static/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
-		<link href="static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
-		<link href="static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+		<link href="/static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="/static/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="/static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="/static/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+		<link href="/static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+		<link href="/static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
 		<!-- THEME CSS -->
-		<link href="static/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="static/css/layout.css" rel="stylesheet" type="text/css" />
-		<link href="static/css/color_scheme/green.css" rel="stylesheet" type="text/css" />
+		<link href="/static/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="/static/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="/static/css/color_scheme/green.css" rel="stylesheet" type="text/css" />
 
 		<!-- Morenizr -->
-		<script type="text/javascript" src="static/plugins/modernizr.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/modernizr.min.js"></script>
 	</head>
 	<body>
 
@@ -39,7 +39,7 @@
 			<div class="container">
 
 				<!-- LOGO -->
-				<a href="/" class="logo"><img alt="" src="static/images/logo.png" height="60" /></a>
+				<a href="/" class="logo"><img alt="" src="/static/images/logo.png" height="60" /></a>
 				<!-- LOGO -->
 
 				<!-- OPTIONS -->

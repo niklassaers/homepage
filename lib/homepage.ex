@@ -1,14 +1,15 @@
 defmodule BlogPost do
-  defstruct header: 0, do_categories: 0, do_excerpt: 0, do_tags: 0, title: "", permalink: "", tags: [], categories: [], content: "", author: "", layout: "", excerpt: ""
+  defstruct header: 0, do_categories: 0, do_excerpt: 0, do_tags: 0, title: "", permalink: "", tags: [], categories: [], content: "", author: "", layout: "", excerpt: "", date: ""
 end
 
 defmodule Blog do
   def startup do
   	{ :ok, files } = File.ls "blog"
   	posts = parse_files([], files)
+	sortedPosts = Enum.sort posts, &(&1.date > &2.date)
   	
   	IO.puts "Done"
-  	the_loop posts
+  	the_loop sortedPosts
   end
 
   def the_loop(_posts) do
@@ -19,8 +20,9 @@ defmodule Blog do
   		{:reload, sender} ->
   			{ :ok, files } = File.ls "blog"
   			posts = parse_files([], files)
-  			send sender, posts
-  			the_loop(posts)
+  			sortedPosts = Enum.sort posts, &(&1.date > &2.date)
+  			send sender, sortedPosts
+  			the_loop(sortedPosts)
   		{:posts, sender} ->
   			send sender, posts
   			the_loop(posts)
@@ -40,6 +42,7 @@ defmodule Blog do
 	  	content = File.read! file
   	  	ar = String.split(content, "\n", trim: true)
   	  	post = parse_blogEntry ar
+  	  	post = %{post | date: String.slice(head, 0, 10) }
   	    acc = parse_files(acc ++ [post], tail)
   	    acc
   	  end
@@ -138,6 +141,7 @@ defmodule Homepage do
   """
   def start(_type, _args) do
     pid = spawn(fn -> Blog.startup() end)
+    Process.register(pid, :blog)
     Homepage.Dynamo.start_link([max_restarts: 5, max_seconds: 5])
   end
 end
