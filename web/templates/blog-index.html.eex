@@ -3,10 +3,6 @@
 <div id="middle" class="container">
 	<div class="white">
 
-		<header class="page-header">
-			<h1>Standard Blog</h1>
-		</header>
-
 		<div id="blog" class="row">
 
 			<!-- LEFT COLUMN -->
@@ -22,14 +18,14 @@
 					<!-- article title -->
 					<div class="item-title">
 						<h2><a href="<%= post.permalink %>"><%= post.title %></a></h2>
-						<!-- TAGS -->
-						<%= for tag <- post.tags do %>
-							<a href="/blog/tags/<%= tag %>" class="label label-default light"><i class="fa fa-dot-circle-o"></i> <%= tag %></a> 
-						<% end %>
-
 						<!-- CATEGORIES -->
 						<%= for category <- post.categories do %>
 							<a href="/blog/categories/<%= category %>" class="label label-default light"><i class="fa fa-dot-circle-o"></i> <%= category %></a> 
+						<% end %>
+
+						<!-- TAGS -->
+						<%= for tag <- post.tags do %>
+							<a href="/blog/tags/<%= tag %>" class="label label-default light"><i class="fa fa-tag"></i> <%= tag %></a> 
 						<% end %>
 
 						<span class="label label-default light"><%= post.date %></span> 
@@ -37,14 +33,15 @@
 
 					<!-- blog short preview -->
 					<p>
-						<%= post.content %>
+						<%= Markdown.to_html(post.content) %>
 					</p>
 
-					<!-- read more button -->
-					<a href="blog-single-with-sidebar.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+<br/>
 
 				</div>
 				<!-- /blog item -->
+
+				<div class="divider half-margins"><!-- divider 30px --></div>
 <% end %>
 
 

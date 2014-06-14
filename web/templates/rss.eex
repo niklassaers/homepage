@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Niklas Saers' blog</title>
+        <link>http://www.saers.com/</link>
+        <description>Niklas Saers' blog</description>
+<%= for post <- @posts do %>
+        <item>
+            <title><%= post.title %></title>
+            <link>http://www.saers.com<%= post.permalink %></link>
+            <guid isPermaLink="true">http://www.saers.com<%= post.permalink %></guid>
+            <pubDate><%= post.date %></pubDate>
+            <description><%= Markdown.to_html(post.content) %></description>
+        </item>
+<% end %>
+    </channel>
+</rss>

@@ -39,6 +39,16 @@ defmodule ApplicationRouter do
 	  redirect conn, to: "/blog/1"
   end
 
+  get "/rss" do
+      send :blog, { :posts, Kernel.self }
+      receive do
+        posts ->
+			{ posts, _ } = Enum.split(posts, 20)
+			conn = conn.assign(:posts, posts)
+			render conn, "rss"
+	  end
+  end
+
   get "/blog/:pageno" do
 	postPrPage = 5
     send :blog, { :posts, Kernel.self }
@@ -72,9 +82,12 @@ defmodule ApplicationRouter do
 			else
 				index = Enum.find_index(posts, fn(post) -> post.permalink == permalink end)
 				last_url = Enum.at(posts, index - 1)
-				if last_url != nil do
+				if index > 0 and last_url != nil do
 					last_url = last_url.permalink
+        else
+          last_url = nil
 				end
+
 				next_url = Enum.at(posts, index + 1)
 				if next_url != nil do
 					next_url = next_url.permalink

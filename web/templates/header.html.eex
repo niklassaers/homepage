@@ -71,7 +71,7 @@
 						<ul class="nav nav-pills nav-main scroll-menu" id="topMain">
 
 							<li class="dropdown">
-								<a class="dropdown-toggle" href="/CV.html">CURRICULUM VITA <i class="fa fa-angle-down"></i></a>
+								<a class="dropdown-toggle" href="/static/assets/cv.pdf">CURRICULUM VITA <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
 									<li><a href="/CV.html">Plain</a></li>
 									<li><a href="/static/assets/cv.pdf">PDF version</a></li>
@@ -80,9 +80,9 @@
 							</li>
 
 							<li class="dropdown">
-								<a class="dropdown-toggle" href="#">BLOG <i class="fa fa-angle-down"></i></a>
+								<a class="dropdown-toggle" href="/blog">BLOG <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="page-about-us.html">My blog</a></li>
+									<li><a href="/blog/1">My blog</a></li>
 									<li class="dropdown">
 										<a href="#">Recent entries <i class="fa fa-angle-right"></i></a>
 										<ul class="dropdown-menu">

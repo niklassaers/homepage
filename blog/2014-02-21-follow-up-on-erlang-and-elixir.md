@@ -6,11 +6,12 @@ permalink: /archives/2014/02/21/follow-up-on-erlang-and-elixir/
 categories:
   - Discussion
 tags:
-  - letter
+  Letter
 ---
 Dear John,  
   
 thanks for [the great show (ATP)][1], I look forward to every episode the three of you do. In [the episode I listened to today (#53)][2] you guys talked about ObjC moving forward, and you mentioned Erlang a few times.
+
 
 Two small disclaimers first, (1) I&#8217;m very new in the world of Erlang, and (2) [the company I work][3] for has <a href="https://www.erlang-solutions.com" class="broken_link">subsidiaries</a> that only focus on Erlang, and shares in <a href="https://www.erlang-solutions.com" class="broken_link">companies</a> whose [products][4] are built on top of Erlang. I like to believe I&#8217;m not influenced by this, but I **am** influenced, amongst others, by <a href="https://github.com/krestenkrab" class="broken_link">my CTO</a>s passion for the ecosystem.
 
