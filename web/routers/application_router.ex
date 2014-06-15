@@ -6,6 +6,12 @@ defmodule ApplicationRouter do
     # You can comment the line below if you don't need
     # any of them or move them to a forwarded router
     conn.fetch([:cookies, :params])
+	conn = conn.assign(:recent, Blog.recent_as_html())
+  end
+
+  finalize do
+	 # now add to vote
+  	 send :voter, { :vote, conn }
   end
 
   # It is common to break your Dynamo into many
@@ -38,6 +44,8 @@ defmodule ApplicationRouter do
   get "/blog" do
 	  redirect conn, to: "/blog/1"
   end
+
+  
 
   get "/rss" do
       send :blog, { :posts, Kernel.self }

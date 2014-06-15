@@ -86,10 +86,9 @@
 									<li class="dropdown">
 										<a href="#">Recent entries <i class="fa fa-angle-right"></i></a>
 										<ul class="dropdown-menu">
-											<li><a href="#">Menu Level #3</a></li>
-											<li><a href="#">Menu Level #3</a></li>
-											<li><a href="#">Menu Level #3</a></li>
-											<li><a href="#">Menu Level #3</a></li>
+<%= for recent <- @recent do %>
+<%= recent %>
+<% end %>
 										</ul>
 									</li>
 									<li class="dropdown">
