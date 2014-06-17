@@ -3,7 +3,7 @@ defmodule Config do
   def config do
     [webserver:
       [http_host: "localhost",
-       http_port: 8080,
+       http_port: 4000,
        acceptors: 100,
        ssl: false,
        cacertfile_path: "",
@@ -11,7 +11,7 @@ defmodule Config do
        keyfile_path: ""
       ],
     ws:
-      [ws_port: 8080,
+      [ws_port: 4000,
        ws_mod: :Handler
       ],
     use_internationalization: false,
