@@ -1,13 +1,9 @@
-Dynamo.under_test(Homepage.Dynamo)
-Dynamo.Loader.enable
 ExUnit.start
 
-defmodule Homepage.TestCase do
-  use ExUnit.CaseTemplate
+System.put_env("MIX_ENV", "test")
 
-  # Enable code reloading on test cases
-  setup do
-    Dynamo.Loader.enable
-    :ok
-  end
+defmodule MixHelpers do
+  
+  :hackney.start()
+
 end

@@ -1,4 +1,0 @@
-@Version 	1.0
-@Date		Monday, March 17, 2014
-@Author		Dorin Grigoras
-	* Initial Release
