@@ -136,7 +136,7 @@ defmodule Blog do
   	else
   	  [head | tail] = files
   	  file = "blog/" <> head
-  	  if File.dir? file do
+  	  if File.dir?(file) or String.ends_with?(file, ".md") == false do
   	  	acc = parse_files(acc, tail)
   	  	acc
   	  else
@@ -174,7 +174,10 @@ defmodule Blog do
 	    	String.first(head) == " " ->
 		    	case post do
 		    		%{do_categories: 1} ->
-		    			post = %{post | categories: post.categories ++ [String.slice(stripped, 2..-1)] }
+		    			if String.starts_with?(stripped, "- ") do
+		    				stripped = String.slice(stripped, 2..-1)
+		    			end
+		    			post = %{post | categories: post.categories ++ [stripped] }
 		    		%{do_excerpt: 1} ->
 		    			post = %{post | excerpt: post.excerpt <> "\n" <> stripped }
 		    		#%{header: 2} ->

@@ -9,10 +9,10 @@ defmodule ApplicationRouter do
 	conn = conn.assign(:recent, Blog.recent_as_html())
   end
 
-  finalize do
-	 # now add to vote
-  	 send :voter, { :vote, conn }
-  end
+  #finalize do
+	# # now add to vote
+  #	 send :voter, { :vote, conn }
+  #end
 
   # It is common to break your Dynamo into many
   # routers, forwarding the requests between them:
