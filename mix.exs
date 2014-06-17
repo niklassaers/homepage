@@ -4,27 +4,27 @@ defmodule Homepage.Mixfile do
   def project do
     [ app: :homepage,
       version: "0.0.1",
-      build_per_environment: true,
-      dynamos: [Homepage.Dynamo],
-      compilers: [:elixir, :dynamo, :app],
+      elixir: "~> 0.14.0",
       deps: deps ]
   end
 
   # Configuration for the OTP application
   def application do
-    [ applications: [:cowboy, :dynamo],
-      mod: { Homepage, [] } ]
+    [
+      mod: { Homepage, [] },
+      applications: [:phoenix]
+    ]
   end
 
+  # Returns the list of dependencies in the format:
+  # { :foobar, git: "https://github.com/elixir-lang/foobar.git", tag: "0.1" }
+  #
+  # To specify particular versions, regardless of the tag, do:
+  # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
-    [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo" },
-      { :timex, "~> 0.6.0"},
-      { :json,   github: "cblage/elixir-json"},
-      { :ex_doc, github: "elixir-lang/ex_doc", ref: "4a6391bf2d6dacec8c6b52ef2506fb5607eb894c"}
-	  #{ :htmlentities, github: "shurizzle/elixir-htmlentities" }
-      #{ :eml, github: "mjs2600/eml", branch: "0.13-upgrade"}
-
-       ]
+    [
+      {:phoenix, "0.2.8"},
+      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
+    ]
   end
 end
