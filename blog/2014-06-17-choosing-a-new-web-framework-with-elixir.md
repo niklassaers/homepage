@@ -23,7 +23,13 @@ The four of them depend on Plug, and thus on Cowboy. When I started my work, 0.1
 
 So, since I'm getting Plug anyway, do I want it the Phoenix way or Weber way? By reading their README.md, I don't really have a preference. They seem to be very similar. Both have one main maintainer, two "leutnants" and many with a commit or two. Both have one-digit open issues and 3-digit closed issues.
 
-So, not knowing what way to go, I'll just pick Weber for now, and see how I like that.
+When it came down to "mix test", Phoenix had significantly more tests, and they gave no warnings, where I had 25 warnings when running Webers tests. So with lots of probably insignificant data points, this was the one that tipped the scale to let me try out Phoenix first.
+
+However, my run with Phoenix was short. I had expected to be able to reuse my .eex template files from my Dynamo project, but there was just no documentation or examples to support this. Not even an itty-bitty template file in the generated scaffold. I could see from the dependencies that there is support, but it looked like I would have to do quite a bit of work on that on my own.
+
+So I tried out Weber. Generate the scaffold and launch. Fine, there's HTML on launch and it seems to be taken from a view file. The HTML includes a link to the Weber site, which is 404. Now that is reassuring...
+
+
 
 [0]: https://github.com/dynamo/dynamo/commit/3c28f27603a480d2755a89aba3a91e88df3469ce#diff-04c6e90faac2675aa89e2176d2eec7d8L8 "Dynamo Github link saying it's on maintenance only mode"
 
