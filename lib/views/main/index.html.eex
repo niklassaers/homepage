@@ -1,4 +1,4 @@
-<%= render "header.html" %>
+<%= render "header.html", [:recent, @recent] %>
 
 
 
